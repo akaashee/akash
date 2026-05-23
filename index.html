@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .h-120 { height: 30rem; }
+    .w-50 { width: 12rem; }
+    .h-50 { height: 12rem; }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white scroll-smooth">
+
+  <div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+
+    <!-- HEADER -->
+    <header class="flex justify-between items-center sticky top-0 bg-black/50 z-50 p-3">
+      <a href="#" class="flex items-center">
+        <h1 class="text-4xl font-bold hover:text-blue-400 hover:animate-pulse">AKASH.</h1>
+      </a>
+
+      <ul class="hidden lg:flex lg:items-end gap-6">
+        <li><a href="#home" class="hover:text-blue-400 transition-colors duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#project" class="hover:text-blue-400">Project</a></li>
+        <li><a href="#skill" class="hover:text-blue-400">Skill</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+
+      <!-- MOBILE MENU BUTTON -->
+      <div class="lg:hidden">
+        <button id="btn" class="text-white focus:outline-none">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <ul id="mobileMenu"
+        class="absolute top-16 right-3 bg-black/90 text-white flex flex-col gap-4 p-4 rounded-lg shadow-lg transform scale-y-0 origin-top transition-transform duration-300 lg:hidden">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#project" class="hover:text-blue-400">Project</a></li>
+        <li><a href="#skill" class="hover:text-blue-400">Skill</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- HOME -->
+    <main class="lg:flex z-20" id="home">
+      <div class="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end" data-aos="zoom-in">
+        <img src="me.jpg" alt="profile"
+          class="h-120 lg:h-[500px] lg:w-[400px] border-black rounded-2xl border-2 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700">
+      </div>
+
+      <div class="space-y-6 mt-16 lg:flex-1" data-aos="fade-right">
+        <div class="text-4xl font-bold leading-tight">
+          <h1>Hi,</h1>
+          <h1>I'm Akash Ajay M P</h1>
+          <h1 class="text-2xl text-blue-500">Frontend Developer</h1>
+        </div>
+
+        <p>Passionate frontend developer with expertise in HTML, CSS, and JavaScript...</p>
+
+        <form class="flex justify-center gap-8" data-aos="fade-up">
+          <button class="bg-white text-black w-20 rounded-md font-medium cursor-pointer">Hire Me</button>
+          <button class="bg-white text-black w-25 h-14 rounded-md font-medium cursor-pointer">Get Resume</button>
+        </form>
+
+        <div data-aos="zoom-in-up">
+          <ul class="flex gap-6 justify-center">
+            <a href="https://www.instagram.com/akaashee_"><li><i class="fa-brands fa-instagram fa-2x"></i></li></a>
+            <a href="https://www.linkedin.com/in/akash-ajay-m-p-51b285367"><li><i class="fa-brands fa-linkedin fa-2x"></i></li></a>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <div class="flex flex-col justify-center items-center gap-10" id="about" data-aos="fade-up">
+      <h1 class="text-4xl">About Me</h1>
+      <img src="me.jpg" class="h-[300px] w-[290px] rounded-full border-white transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700"
+        data-aos="zoom-in">
+      <h1 data-aos="fade-right">Frontend Developer!</h1>
+      <p data-aos="fade-up">I'm a creative and detail-oriented Frontend Developer...</p>
+      <button class="bg-white text-black w-25 h-14 rounded-md font-medium cursor-pointer" data-aos="zoom-in-up">Read More</button>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="flex flex-col gap-10 justify-center items-center" id="project" data-aos="fade-up">
+      <h1 class="text-4xl">My Projects</h1>
+      <div class="flex justify-around flex-wrap gap-10">
+        <div class="w-50 h-50 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="flip-left">
+          <img src="img.png" class="h-40 w-40 hover:scale-110 transition-transform duration-300">
+        </div>
+        <div class="w-50 h-50 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="flip-right">
+          <img src="clone.jpg" class="h-40 w-40 hover:scale-110 transition-transform duration-300">
+        </div>
+        <div class="w-50 h-50 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="flip-up">
+          <img src="bank.jpg" class="h-40 w-40 hover:scale-110 transition-transform duration-300">
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="flex flex-col gap-10 justify-center items-center" id="skill" data-aos="fade-up">
+      <h1 class="text-4xl">My Skills</h1>
+      <div class="flex justify-around flex-wrap gap-10">
+        <div class="w-40 h-40 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="zoom-in">
+          <img src="html.png" class="h-20">
+        </div>
+        <div class="w-40 h-40 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="zoom-in">
+          <img src="css.png" class="h-20">
+        </div>
+        <div class="w-40 h-40 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="zoom-in">
+          <img src="js.png" class="h-20">
+        </div>
+        <div class="w-40 h-40 flex justify-center items-center border-2 border-white rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-700" data-aos="zoom-in">
+          <img src="tw.jpeg" class="h-20">
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="flex flex-col gap-20 justify-center items-center" id="contact" data-aos="fade-up">
+      <h1 class="text-4xl">Contact Me</h1>
+      <div class="flex flex-col justify-center items-center gap-10 bg-white text-black h-[500px] w-[400px] rounded-xl p-6" data-aos="zoom-in">
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 w-full">
+          <input type="hidden" name="access_key" value="110eb1d1-4753-418b-95f9-cded69de4fb4">
+          <input type="text" name="name" required class="border rounded-lg p-2" placeholder="Your Name">
+          <input type="email" name="email" required class="border rounded-lg p-2" placeholder="Your Email">
+          <input type="tel" name="number" required class="border rounded-lg p-2" placeholder="Phone Number">
+          <textarea name="message" required class="border rounded-lg p-2 h-[120px]" placeholder="Your Message"></textarea>
+          <button type="submit" class="border rounded-lg h-10 bg-black text-white hover:bg-gray-800 transition">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    const btn = document.getElementById('btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
