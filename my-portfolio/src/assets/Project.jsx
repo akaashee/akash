@@ -21,19 +21,21 @@ const Project = () => {
               img: "project.png",
               title: "Project 1",
               desc: "Modern frontend project built with React & Tailwind.",
+              color: "hover:shadow-cyan-500/20",
             },
 
             {
               img: "akash.png",
               title: "Portfolio Design",
               desc: "Modern glowing portfolio logo design with premium UI style.",
+              color: "hover:shadow-blue-500/20",
             },
           ].map((project, i) => (
             
             <div
               key={i}
               data-aos="zoom-in"
-              className="glass rounded-xl p-6 hover:-translate-y-2 transition duration-500 w-[320px] text-center group bg-white/[0.03] border border-white/10"
+              className={`group rounded-xl p-6 w-[320px] text-center border border-white/10 bg-white/[0.03] transition-all duration-500 hover:-translate-y-3 hover:bg-white/[0.08] hover:shadow-2xl ${project.color}`}
             >
               
               {/* IMAGE */}
