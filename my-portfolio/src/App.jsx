@@ -7,6 +7,7 @@ import Project from "./assets/Project"
 import About from "./assets/About"
 import Hero from "./assets/Hero"
 import Navbar from "./assets/Navbar"
+import Footer from "./assets/Footer"
 
 const App = () => {
   const [open, setOpen] = useState(false)
@@ -24,6 +25,7 @@ const App = () => {
       <Project />
       <Skills />
       <Contact/>
+      <Footer />
     </div>
   )
 }
