@@ -39,7 +39,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed mb-8">
-            I’m <span className="text-white font-medium">Akash</span>, a Frontend
+            I’m <span className="text-white font-medium">Akash Ajay M P</span>, a Frontend
             Architect. I translate complex ideas into seamless, high-performance
             digital experiences that people love.
           </p>

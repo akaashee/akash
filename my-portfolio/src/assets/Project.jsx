@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div>
       <section id="projects" className="py-32 px-6">
-        
+
         {/* HEADING */}
         <h2
           className="text-4xl font-bold text-center mb-16"
@@ -15,32 +15,36 @@ const Project = () => {
 
         {/* PROJECT GRID */}
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto place-items-center">
-          
+
           {[
             {
               img: "project.png",
-              title: "Project 1",
-              desc: "Modern frontend project built with React & Tailwind.",
+              title: "E-Commerce Platform",
+              desc: `User Side:
+Built a seamless e-commerce shopping experience with product browsing, smart filtering, cart & wishlist management, secure checkout, and responsive UI for all devices.
+
+Admin Side:
+Developed an admin dashboard for managing orders, tracking revenue, monitoring sales analytics, and handling store operations through a clean and responsive interface.`,
               color: "hover:shadow-cyan-500/20",
             },
 
             {
               img: "akash.png",
               title: "Portfolio Design",
-              desc: "Modern glowing portfolio logo design with premium UI style.",
+              desc: "Portfolio Website",
               color: "hover:shadow-blue-500/20",
             },
           ].map((project, i) => (
-            
+
             <div
               key={i}
               data-aos="zoom-in"
               className={`group rounded-xl p-6 w-[320px] text-center border border-white/10 bg-white/[0.03] transition-all duration-500 hover:-translate-y-3 hover:bg-white/[0.08] hover:shadow-2xl ${project.color}`}
             >
-              
+
               {/* IMAGE */}
               <div className="flex justify-center overflow-hidden rounded-lg">
-                
+
                 <img
                   src={`/${project.img}`}
                   alt={project.title}
@@ -54,7 +58,7 @@ const Project = () => {
               </h3>
 
               {/* DESCRIPTION */}
-              <p className="text-sm text-gray-400 mt-2 leading-relaxed">
+              <p className="text-sm text-gray-400 mt-2 leading-relaxed whitespace-pre-line">
                 {project.desc}
               </p>
             </div>
