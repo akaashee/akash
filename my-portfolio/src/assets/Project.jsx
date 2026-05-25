@@ -30,8 +30,7 @@ Developed an admin dashboard for managing orders, tracking revenue, monitoring s
 
             {
               img: "akash.png",
-              title: "Portfolio Design",
-              desc: "Portfolio Website",
+              title: "Portfolio Website",
               color: "hover:shadow-blue-500/20",
             },
           ].map((project, i) => (
